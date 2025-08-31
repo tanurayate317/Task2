@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="calc" role="application" aria-label="Calculator">
+    <section class="display" aria-live="polite">
+      <div id="expr" class="expr" title="Expression">0</div>
+      <div id="preview" class="preview" title="Live result">&nbsp;</div>
+    </section>
+
+    <section class="keys" aria-label="Calculator keys">
+      <button class="danger" data-action="clear" aria-label="All Clear">AC</button>
+      <button class="op" data-action="delete" aria-label="Backspace">⌫</button>
+      <button class="op" data-action="percent" aria-label="Percent">%</button>
+      <button class="op" data-op="/" aria-label="Divide">÷</button>
+
+      <button data-value="7">7</button>
+      <button data-value="8">8</button>
+      <button data-value="9">9</button>
+      <button class="op" data-op="*" aria-label="Multiply">×</button>
+
+      <button data-value="4">4</button>
+      <button data-value="5">5</button>
+      <button data-value="6">6</button>
+      <button class="op" data-op="-" aria-label="Minus">−</button>
+
+      <button data-value="1">1</button>
+      <button data-value="2">2</button>
+      <button data-value="3">3</button>
+      <button class="op" data-op="+" aria-label="Plus">+</button>
+
+      <button data-action="sign" aria-label="Toggle Sign">±</button>
+      <button data-value="0">0</button>
+      <button data-action="dot" aria-label="Decimal">.</button>
+      <button class="accent" data-action="equals" aria-label="Equals">=</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
